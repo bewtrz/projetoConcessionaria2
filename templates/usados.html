@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/usados.css')}}">
+    <title>JM VEICULOS</title>
+</head>
+<body>
+    <nav-bar>
+        <a class="logo" href="{{ url_for('veiculos_bp.index')}}">JM Veiculos </a>
+        <div class="menu">
+        <ul class="nav-list">
+            <li> <a class="li" href="{{ url_for('veiculos_bp.indexNovos')}}"></a>NOVOS</li>
+            <li> <a class="li" href="{{ url_for('veiculos_bp.indexUsados')}}"></a>USADOS</li>   
+            <li> <a class="li" href="{{ url_for('veiculos_bp.store')}}"></a>CADASTRAR</li>
+        </ul>
+        </div>
+    </nav-bar>
+    <main>
+       <div class="card1">
+        <div class="imagem"> <img class="edit_img" src="/templates/imagens/imagem_1.jpg" alt="">
+
+        </div>
+
+        <div class="informações">
+            <h1> FUSCA </h1>
+        </div>
+
+        <button> ver mais </button>
+        <button> Alterar dados </button>
+       </div>
+
+       <div class="card1">
+        <div class="imagem"> <img class="edit_img" src="/templates/imagens/imagem_1.jpg" alt="">
+
+        </div>
+
+        <div class="informações">
+            <h1> FUSCA </h1>
+        </div>
+
+        <button> ver mais </button>
+        <button> Alterar dados </button>
+       </div>
+
+       <div class="card1">
+        <div class="imagem"> <img class="edit_img" src="/templates/imagens/imagem_1.jpg" alt="">
+
+        </div>
+
+        <div class="informações">
+            <h1> FUSCA </h1>
+        </div>
+
+        <button> ver mais </button>
+        <button> Alterar dados </button>
+       </div>
+    </main>
+    <footer>
+        <div class="footer-center"> &copy;2023 JM VEICULOS </div>
+    </footer>
+</body>
+</html>
